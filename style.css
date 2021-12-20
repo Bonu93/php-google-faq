@@ -11,8 +11,6 @@
 
 header {
     color: #5f6368;
-    padding: 0 1rem;
-    border-bottom: 1px solid #5f6368;
 }
 .top-header {
     display: flex;
@@ -20,6 +18,7 @@ header {
 }
 
 .brand {
+    padding: 0 1rem;
     margin-right: 1rem;
 }
 
@@ -39,26 +38,29 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
+    border-bottom: 1px solid #5f6368;
+    height: 50px;
 }
 
 nav li {
     height: 100%;
     display: block;
     margin-right: 1rem;
-    margin-bottom: 5px;
     border-bottom: 3px solid transparent;
     padding: 1rem;
+    cursor: pointer;
 }
 
-nav li:hover {
-    color: blue;
-    border-bottom: 3px solid blue;
+nav li:hover, nav li:focus {
+    color: #3667d0;
+    border-bottom: 3px solid #3667d0;
 }
 
 
 /* MAIN */
 
 .container {
+    padding: 1rem;
     width: 1000px;
     margin: auto;
 }
